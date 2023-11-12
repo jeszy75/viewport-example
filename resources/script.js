@@ -1,3 +1,9 @@
+document.getElementById('info').innerHTML = `Screen size: <span id="screenSize"></span><br>
+Layout viewport size: <span id="layoutViewportSize"></span><br>
+Visual viewport size: <span id="visualViewportSize"></span><br>
+Visual viewport scale factor: <span id="visualViewportScale"></span><br>
+Device pixel ratio: <span id="devicePixelRatio"></span>`;
+
 let screenSizeElement = document.getElementById("screenSize");
 const updateScreenWidth = () => {
     screenSizeElement.innerText = `${screen.width}px \u00d7 ${screen.height}px`;
